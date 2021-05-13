@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	cards := []string{newCard(), "Ace of Spades"}
+	cards := deck{newCard(), "Ace of Spades"}
 	cards = append(cards, "King of Hearts")
 
 	for i, card := range cards {

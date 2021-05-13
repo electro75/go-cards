@@ -1,6 +1,8 @@
 ## Learning Go Basics.
 
+This repo contains the code written while going through [this course](https://www.udemy.com/course/go-the-complete-developers-guide/).
 
+Some of the learnings are jotted down below.
 
 ### Package main
 
@@ -46,4 +48,10 @@ func returnsAString string () {
             fmt.Println(i, fruit)
         }
         ```
-
+- Creating new types:
+    - Similar to inheritance in OOP.
+    - Example: 
+    ```
+    type basket []string  // basket will have the properties of slice of strings.
+    ```
+    -
