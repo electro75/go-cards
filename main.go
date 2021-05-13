@@ -3,12 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	// card := "Ace of Spades" // := is used to a declare and initialise a new variable.
-	card := newCard()
+	cards := []string{newCard(), "Ace of Spades"}
+	cards = append(cards, "King of Hearts")
 
-	fmt.Println(card)
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
+
+	// fmt.Println(cards)
 }
 
-func newCard() string { // since we return a string value from this function.
+func newCard() string {
 	return "Five of Diamonds"
 }
