@@ -54,4 +54,15 @@ func returnsAString string () {
     ```
     type basket []string  // basket will have the properties of slice of strings.
     ```
-    -
+    - Functions can be associated with the new types, for example:
+    ```
+    func(b basket) print() {            // receiver function. 'b' is the argument with type basket
+        for i, fruit = range b {        // first letter from type declared is used as a convention.
+            fmt.Println(i, fruit)
+        }
+    }
+
+    fruits := basket{"apple","banana","kiwi"}
+    fruits.print()           // prints out the list of fruits initialised above
+    ```
+- _Tip: If a variable is not being used, just replace it with an  _(underscore)_
