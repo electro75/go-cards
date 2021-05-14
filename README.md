@@ -19,11 +19,11 @@ go build yourfilename/s.go // makes an executable file. Does not execute it.
 
 - Go is a statically typed language. A type of variable, once set, cannot be changed.
 - A variable can be initialised in the following ways:
-
 ```
 var abc string = "Hello"
 abc := "Hello"  //  := is used to a declare and initialise a new variable.
 ```
+
 - Functions that return a variable need to specify the return type at declaration:
 ```
 func returnsAString string () {
@@ -31,6 +31,7 @@ func returnsAString string () {
     return "Hello"
 }
 ```
+
 - There are two types of data structures for holding values with same data types:
     - Arrays : Fixed length of data.
     - Slices : Arrays that can shrink or grow.
@@ -48,6 +49,13 @@ func returnsAString string () {
             fmt.Println(i, fruit)
         }
         ```
+        * Returning a part of the slice:
+        ```
+        fruits[startIndex:endNotIncluded]
+        // if LHS of the : is ommitted the elements are returned from the start
+        // if RHS of the : is ommitted the elements till the end are returned
+        ```
+
 - Creating new types:
     - Similar to inheritance in OOP.
     - Example: 
@@ -65,4 +73,14 @@ func returnsAString string () {
     fruits := basket{"apple","banana","kiwi"}
     fruits.print()           // prints out the list of fruits initialised above
     ```
-- _Tip: If a variable is not being used, just replace it with an  _(underscore)_
+
+- _Tip: If a variable is not being used, just replace it with an  _(underscore)_ .
+
+- Functions can return multiple values.
+```
+func funcName() (type1,type2) {
+    return valueOfType1, valueOfType2
+}
+
+value1, value2 := funcName()
+```
