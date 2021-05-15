@@ -11,8 +11,8 @@ func main() {
 	fmt.Println("----------------")
 	remainingCards.print()
 	fmt.Println(cards.toString())
-
-	cards.saveToFile("myCards")
+	cardsFile := newDeckFromFile("myCards")
+	cardsFile.print()
 }
 
 func newCard() string {
