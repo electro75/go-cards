@@ -93,3 +93,5 @@ value1, value2 := funcName()
     ```
 
 - `strings` is a package in golang that provides helper methods to play around with strings.
+
+- `ioutils` is a package used for input output functions in golang
