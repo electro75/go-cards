@@ -84,3 +84,12 @@ func funcName() (type1,type2) {
 
 value1, value2 := funcName()
 ```
+
+- **Slice Bytes** are how Golang saves various types of data to a file.
+    - Type conversion is done as follows:
+    ```
+    []byte("Hi there")
+    //resulting type(value to be converted)
+    ```
+
+- `strings` is a package in golang that provides helper methods to play around with strings.
