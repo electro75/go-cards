@@ -5,14 +5,12 @@ import "fmt"
 func main() {
 	cards := newDeck()
 
-	hand, remainingCards := deal(cards, 5)
+	cards.print()
 
-	hand.print()
-	fmt.Println("----------------")
-	remainingCards.print()
-	fmt.Println(cards.toString())
-	cardsFile := newDeckFromFile("myCards")
-	cardsFile.print()
+	fmt.Println("---------")
+
+	cards.shuffle()
+	cards.print()
 }
 
 func newCard() string {

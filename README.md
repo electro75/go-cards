@@ -95,3 +95,8 @@ value1, value2 := funcName()
 - `strings` is a package in golang that provides helper methods to play around with strings.
 
 - `ioutils` is a package used for input output functions in golang
+
+- `shuffle()` functionality
+    - time.Now().UnixNano() generates a different int64 number everytime the function is run
+    - this value is used to create the "seed" for create a NewSource object
+    - the NewSource is used as the basis for the random number generator
