@@ -85,6 +85,10 @@ func funcName() (type1,type2) {
 value1, value2 := funcName()
 ```
 
+- Functions setup with receivers, receive only the copy of the value that they are called with.
+    - they do not mutate the actual value.
+    - if the value is to be changed, they should be called with pointers
+
 - **Slice Bytes** are how Golang saves various types of data to a file.
     - Type conversion is done as follows:
     ```
